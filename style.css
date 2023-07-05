@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#bg-container img, #bg-container video {
+  object-fit: cover;
+}
+
+#time-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgb(240,240,240);
+}
+
+#time {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+#second {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#date {
+  font-size: 20px;
+}
+
+#search-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#search-input {
+  font-family: Arial, sans-serif;
+  width: 650px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  padding-left: 30px;
+  padding-top: 3px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"] { 
+  font-family: Arial, sans-serif;  
+  font-size: 17px
+
+}
+
+#search-input:focus {
+   outline:none; 
+   background-color: rgba(255,255,255,0.75);
+}
+
+#quote-container {
+   position: absolute;
+   bottom:10%;
+   left:50%;
+   transform: translateX(-50%);
+   text-align:center; 
+   color: white;
+   font-size: 20px;
+}
+
+#quote {
+  font-family: Arial, sans-serif;
+  font-size:25px; 
+}
+
+
+#search-input {
+    /* size, position, etc... */
+    box-shadow: 3px 4px 3px 3px #00000053;
+    backdrop-filter: 
+        /* 负责背景模糊 */
+        blur(20px)
+        /* 负责亮度，100 以下会变暗，以上会提亮 */
+        brightness(120%)
+        /* 负责颜色饱和度，可以减小来衬托前景，避免背景太鲜艳 */
+        saturate(250%);
+    /* 负责颜色叠加，一半白色、黑色或主题色，衬托前景 */
+    background-color: #ffffff96;
+    /* 负责在效果上添加噪点，可以营造出磨砂效果 */
+    background-image: 
+}
+
+
+
+body {
+  background-color: rgb(200,200,200);
+  /* background-image:url("images/background.png"); */
+}
